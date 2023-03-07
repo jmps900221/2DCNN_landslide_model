@@ -13,3 +13,7 @@ Keras = 2.3.1
 Numpy
 Pandas
 GPU's Vram is important!
+
+
+
+# Anaconda Spyder
