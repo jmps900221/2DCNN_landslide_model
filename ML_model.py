@@ -78,7 +78,7 @@ y_test = data4
 
 
 #  SVM model
-svm = SVC(kernel='linear')
+svm = SVC(kernel='rbf', C=1, gamma=0.1)
 svm.fit(x_train, y_train)
 y_pred_svm = svm.predict(x_test)
 
@@ -119,4 +119,4 @@ print('XGBoost model:')
 print('Confusion matrix: \n', confusion_matrix(y_test, y_pred_xgb))
 print('Accuracy: ', accuracy_score(y_test, y_pred_xgb))
 print('Precision: ', precision_score(y_test, y_pred_xgb))
-print('Recall: ', recall_score(y_test, y_pred_x
+print('Recall: ', recall_score(y_test, y_pred_x))
